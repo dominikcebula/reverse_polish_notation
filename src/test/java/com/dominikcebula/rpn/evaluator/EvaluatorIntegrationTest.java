@@ -34,7 +34,8 @@ public class EvaluatorIntegrationTest {
             "1 1 + 1 1 + +, 4",
             "3 4 5 - +, 2",
             "2 1 + 3 +, 6",
-            "15 7 1 1 + - 2 1 1 + + - +, 16"
+            "15 7 1 1 + - 2 1 1 + + - +, 16",
+            "-10 10 + -5 2 + +, -3"
     })
     public void shouldEvaluateCorrectlyExpression(String tokens, String expectedResult) throws EvaluatorException {
         Capture<Operand> resultCapture = Capture.newInstance();

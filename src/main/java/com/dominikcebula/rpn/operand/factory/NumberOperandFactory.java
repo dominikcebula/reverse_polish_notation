@@ -7,7 +7,7 @@ public class NumberOperandFactory implements OperandFactory {
 
     @Override
     public boolean canHandle(String value) {
-        return value.matches("[0-9]+");
+        return value.matches("-?[0-9]+");
     }
 
     @Override
