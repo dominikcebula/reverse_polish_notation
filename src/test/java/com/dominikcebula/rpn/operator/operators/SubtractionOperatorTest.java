@@ -24,7 +24,7 @@ public class SubtractionOperatorTest {
     private Operand result;
 
     @Test
-    public void shouldInvokeAdditionOperation() {
+    public void shouldInvokeSubtractionOperation() {
         expect(operandA.subtract(operandB)).andReturn(result);
 
         replay();
