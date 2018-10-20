@@ -70,7 +70,7 @@ public class EvaluatorIntegrationTest {
             "1 2 + 3 4 +",
             "1 2 3 + 3 4 +",
     })
-    public void shouldThrowExceptionWhenMoreOperandsThenOperators(String tokens) throws EvaluatorException {
+    public void shouldThrowExceptionWhenMoreOperandsThanOperators(String tokens) throws EvaluatorException {
         Evaluator evaluator = new Evaluator(
                 mockedInputReader(split(tokens)),
                 mockOutputWriter(Capture.newInstance())
@@ -91,7 +91,7 @@ public class EvaluatorIntegrationTest {
             "1 2 3 + 3 4 + + + +",
             "1 2 3 + + 3 4 5 + + + + 6 7 8 + +",
     })
-    public void shouldThrowExceptionWhenMoreOperatorsThenOperands(String tokens) throws EvaluatorException {
+    public void shouldThrowExceptionWhenMoreOperatorsThanOperands(String tokens) throws EvaluatorException {
         Evaluator evaluator = new Evaluator(
                 mockedInputReader(split(tokens)),
                 mockOutputWriter(Capture.newInstance())
