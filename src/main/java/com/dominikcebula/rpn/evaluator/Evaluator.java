@@ -46,10 +46,6 @@ public class Evaluator {
             throw new EvaluatorExceptionNoTokens();
     }
 
-    private void writeResult(Operand result) {
-        outputWriter.writeResult(result);
-    }
-
     private Operand evaluateTokens(String[] tokens) throws OperandNotFoundException, OperatorNotFoundException, EvaluatorException {
         Stack<Operand> operands = new Stack<>();
 
@@ -64,6 +60,10 @@ public class Evaluator {
         }
 
         return getFinalResults(operands);
+    }
+
+    private void writeResult(Operand result) {
+        outputWriter.writeResult(result);
     }
 
     private void evaluateOperandToken(Stack<Operand> operands, String token) throws OperandNotFoundException {
