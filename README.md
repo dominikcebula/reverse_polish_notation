@@ -1,3 +1,5 @@
+[![CI Pipeline](https://github.com/dominikcebula/reverse_polish_notation/actions/workflows/maven.yml/badge.svg)](https://github.com/dominikcebula/reverse_polish_notation/actions/workflows/maven.yml)
+
 # Reverse Polish Notation
 
 ## Intro
