@@ -13,9 +13,9 @@ import static org.junit.Assert.*;
 public class OperandProviderTest {
 
     @Rule
-    public ExpectedException thrown = ExpectedException.none();
+    public final ExpectedException thrown = ExpectedException.none();
 
-    private OperandProvider operandProvider = new OperandProvider();
+    private final OperandProvider operandProvider = new OperandProvider();
 
     @Test
     @Parameters(method = "validCases")

@@ -2,7 +2,7 @@ package com.dominikcebula.rpn.input;
 
 public class CliArgsReader implements InputReader {
 
-    private String[] args;
+    private final String[] args;
 
     public CliArgsReader(String[] args) {
         this.args = args;

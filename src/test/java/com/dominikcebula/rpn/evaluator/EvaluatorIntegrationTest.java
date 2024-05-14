@@ -25,7 +25,7 @@ public class EvaluatorIntegrationTest {
     private static final String[] EMPTY_TOKENS = new String[0];
 
     @Rule
-    public ExpectedException thrown = ExpectedException.none();
+    public final ExpectedException thrown = ExpectedException.none();
 
     @Test
     @Parameters({

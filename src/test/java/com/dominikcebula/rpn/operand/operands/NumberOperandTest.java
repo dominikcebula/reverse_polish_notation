@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 public class NumberOperandTest {
 
     private static final String FIVE_VALUE_STRING = "5";
-    private static final int FIVE_VALUE = Integer.valueOf(FIVE_VALUE_STRING);
+    private static final int FIVE_VALUE = Integer.parseInt(FIVE_VALUE_STRING);
 
     @Test
     public void shouldCorrectlyCreateNumberOperand() {

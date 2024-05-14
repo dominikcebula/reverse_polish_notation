@@ -6,7 +6,7 @@ import java.io.PrintStream;
 
 public class ConsoleOutputWriter implements OutputWriter {
 
-    private PrintStream outputStream = System.out;
+    private final PrintStream outputStream = System.out;
 
     @Override
     public void writeResult(Operand result) {

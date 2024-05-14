@@ -15,9 +15,9 @@ import static org.junit.Assert.*;
 public class OperatorProviderTest {
 
     @Rule
-    public ExpectedException thrown = ExpectedException.none();
+    public final ExpectedException thrown = ExpectedException.none();
 
-    private OperatorProvider operatorProvider = new OperatorProvider();
+    private final OperatorProvider operatorProvider = new OperatorProvider();
 
     @Test
     @Parameters(method = "validOperators")
@@ -27,7 +27,7 @@ public class OperatorProviderTest {
 
     @Test
     @Parameters(method = "validOperatorsAndClasses")
-    public void shouldParseValueCorrectly(String value, Class expectedOperand) throws OperatorNotFoundException {
+    public void shouldParseValueCorrectly(String value, Class<?> expectedOperand) throws OperatorNotFoundException {
         assertEquals(expectedOperand, operatorProvider.getOperator(value).getClass());
     }
 

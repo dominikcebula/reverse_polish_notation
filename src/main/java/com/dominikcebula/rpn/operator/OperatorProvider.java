@@ -17,8 +17,7 @@ public class OperatorProvider {
             SUBTRACTION_SYMBOL, new SubtractionOperator()
     );
 
-    public boolean isOperator(String symbol)
-    {
+    public boolean isOperator(String symbol) {
         return OPERATORS.containsKey(symbol);
     }
 

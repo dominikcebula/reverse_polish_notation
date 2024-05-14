@@ -14,11 +14,11 @@ import java.util.Stack;
 
 public class Evaluator {
 
-    private InputReader inputReader;
-    private OutputWriter outputWriter;
+    private final InputReader inputReader;
+    private final OutputWriter outputWriter;
 
-    private OperandProvider operandProvider = new OperandProvider();
-    private OperatorProvider operatorProvider = new OperatorProvider();
+    private final OperandProvider operandProvider = new OperandProvider();
+    private final OperatorProvider operatorProvider = new OperatorProvider();
 
     public Evaluator(InputReader inputReader, OutputWriter outputWriter) {
         this.inputReader = inputReader;
@@ -82,7 +82,7 @@ public class Evaluator {
     }
 
     private Operand getOperandFromStack(Stack<Operand> operands) throws EvaluatorException {
-        if (operands.size() > 0)
+        if (!operands.isEmpty())
             return operands.pop();
         else
             throw new EvaluatorExceptionMoreOperatorsThanOperands();

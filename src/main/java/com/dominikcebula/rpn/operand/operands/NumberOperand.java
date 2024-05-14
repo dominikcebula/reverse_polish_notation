@@ -2,7 +2,7 @@ package com.dominikcebula.rpn.operand.operands;
 
 public class NumberOperand implements Operand {
 
-    private Integer value;
+    private final Integer value;
 
     public NumberOperand(Integer value) {
         this.value = value;
